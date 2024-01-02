@@ -29,7 +29,7 @@ public class AllInformations extends AnAction {
         // Mostrar o nome do método
         @Nullable Project method = event.getData(CommonDataKeys.PROJECT);
         if (method != null) {
-            System.out.println("Nome do Projeto: " + method.getName());
+            System.out.println("Project name: " + method.getName());
         }
 
         // Obtém o psiFile
@@ -46,7 +46,7 @@ public class AllInformations extends AnAction {
 
         // Obtém o projeto atual
         Project project = event.getProject();
-        System.out.println("Projeto: " + project.toString());
+        System.out.println("Project: " + project.toString());
 
         StringBuilder message =
                 new StringBuilder(event.getPresentation().getText() + " Selected!");
@@ -59,7 +59,7 @@ public class AllInformations extends AnAction {
         System.out.println("event: "+ event.toString());
         System.out.println("present: "+ event.getPresentation().toString());
         //System.out.println("descr: "+ event.getPresentation().getDescription().toString());
-        System.out.println("título: "+ title);
+        System.out.println("title: "+ title);
         Messages.showMessageDialog(
                 project,
                 message.toString(),

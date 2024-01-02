@@ -22,7 +22,7 @@ public class PomDependencyVersionExtractor extends AnAction {
     public void actionPerformed( AnActionEvent e) {
         // Obtém o projeto atual
         Project project = e.getProject();
-        System.out.println("Projeto: " + project.toString());
+        System.out.println("Project: " + project.toString());
 
     }
 

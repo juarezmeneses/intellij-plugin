@@ -22,7 +22,7 @@ public class BohrAction extends AnAction {
         MockPsiMethod method = getMethodToCheck();
 
         if (method != null && method.name().equals("badlyFormattedMethod")) {
-            Messages.showInfoMessage("Este método está mal formatado", "Info");
+            Messages.showInfoMessage("This method is poorly formatted!", "Info");
         }
     }
 

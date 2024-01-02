@@ -13,12 +13,12 @@ public class CheckFileAndMethodName extends AnAction {
     public void actionPerformed(AnActionEvent event) {
         // Mostrar o nome do arquivo
         String fileName = event.getData(CommonDataKeys.PSI_FILE).getName();
-        System.out.println("Arquivo: " + fileName);
+        System.out.println("File name: " + fileName);
 
         // Mostrar o nome do método
         @Nullable Project method = event.getData(CommonDataKeys.PROJECT);
         if (method != null) {
-            System.out.println("Nome do Projeto: " + method.getName());
+            System.out.println("Project name: " + method.getName());
         }
 
 
